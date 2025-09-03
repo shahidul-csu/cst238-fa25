@@ -1,4 +1,4 @@
-package Section53;
+package Section53.Week1;
 
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package Section53;
+package Section53.Week1;
 
 public class Student {
     private String id;
