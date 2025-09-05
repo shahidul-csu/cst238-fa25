@@ -12,5 +12,16 @@ public class CoffeeTest {
         System.out.println(c1.getSize());
         c1.setSize(15);
         System.out.println(c1.getSize());
+
+        c1.addSyrup("T-Shirt");
+        c1.addSyrup("Chocolate");
+        c1.addSyrup("Blue");
+        c1.addSyrup("Raccoon");
+
+        c2.addSyrup("Banana");
+        c2.addSyrup("Gasoline");
+
+        System.out.println(c1);
+        System.out.println(c2);
     }
 }
