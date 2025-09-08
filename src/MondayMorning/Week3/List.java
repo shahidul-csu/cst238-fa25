@@ -1,8 +1,10 @@
-package MondayMorning.Week2;
+package MondayMorning.Week3;
+
+//Introduction to List [Completed in the next session]
 
 //List is an Abstract Data Type (ADT): What?
 //Ordered sequence of elements
-//Operations: add an item, remove an item, find an item, etc.
+//Operations: add an item, remove an item, iterate through the list, etc.
 
 // How to implement a list? -> Using Data Structure (Array, Linked List)
 
