@@ -1,4 +1,4 @@
-package MondayMorning;
+package MondayMorning.Week1;
 
 import java.util.Random;
 import java.util.Scanner;
