@@ -4,7 +4,7 @@ public class CoffeeRevisted {
     private int size;
     private Syrup[] syrups;
     private int syrupCount;
-    //Static attribute belong to class, not an object
+    // A static field is shared by all objects of this class (belongs to the class itself)
     public static final int DEFAULT_MAX_SYRUP = 3;
     private static int coffeeCount = 0;
 
@@ -23,7 +23,8 @@ public class CoffeeRevisted {
         getCoffeeCount();
     }
 
-    //Static method belong to class, not an object
+    // A static method belongs to the class, not to individual objects.
+    // It can be called without creating an instance.
     public static int getCoffeeCount(){
 //        CoffeeRevisted c1 = new CoffeeRevisted();
 //        c1.addSyrup(new Syrup("Caramel"));
