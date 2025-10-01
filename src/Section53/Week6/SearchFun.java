@@ -2,6 +2,7 @@ package Section53.Week6;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SearchFun {
