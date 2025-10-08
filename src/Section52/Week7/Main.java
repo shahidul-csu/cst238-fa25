@@ -1,18 +1,17 @@
-package Section51.Week7;
+package Section52.Week7;
 
 public class Main {
     public static void main(String[] args){
-        System.out.println("Count: " + Foo.getFooCount());
+        System.out.println("Foo Count: " + Foo.getFooCount());
         Foo f1 = new Foo();
-        System.out.println(f1.getBar());
+        System.out.println("Bar: " + f1.getBar());
 
         Foo f2 = new Foo(50);
-        System.out.println(f2.getBar());
-
+        System.out.println("Bar: " + f2.getBar());
 
         Foo f3 = new Foo(100, "Test State");
-        System.out.println(f3.getBar());
-        System.out.println("Count: " + Foo.getFooCount());
+        System.out.println("Bar: " + f3.getBar());
+        System.out.println("Foo Count: " + Foo.getFooCount());
 
         System.out.println(f1);
         System.out.println(f1.getMe());
@@ -20,7 +19,6 @@ public class Main {
         System.out.println(f3.getMe());
         System.out.println(f3.getState());
         System.out.println(f3.getMe().getState());
-
 
         int a = 5;
         System.out.println(f1.getState());
