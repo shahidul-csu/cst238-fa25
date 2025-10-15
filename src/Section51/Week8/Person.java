@@ -1,4 +1,4 @@
-package Section53.Week8;
+package Section51.Week8;
 
 public class Person implements Comparable<Person> {
     private String name;
@@ -26,6 +26,6 @@ public class Person implements Comparable<Person> {
     }
 
     public String toString(){
-        return "Name: " + name + ", Age: " + age + ", Height: " + heightInInches;
+        return "Name: " + name + ", age: " + age + ", height: " + heightInInches;
     }
 }
