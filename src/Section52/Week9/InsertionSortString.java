@@ -8,13 +8,19 @@ public class InsertionSortString {
     public static void main(String[] args) throws IOException {
         String[] data = loadDataFromFile();
         printData(data);
-        swap(data, 0, 1);
+        insertionSort(data);
         printData(data);
-//        insertionSort(data);
     }
 
     public static void insertionSort(String[] data){
-        //To be implemented in the next class
+        for(int i = 0; i < data.length; i++){
+            int k = i;
+            while(k > 0 && data[k].compareTo(data[k-1]) < 0){ // "> 0" or "< 0"
+                swap(data, k, k - 1);
+                k--;
+            }
+            printData(data);
+        }
     }
 
     public static void swap(String[] data, int index1, int index2){
@@ -43,7 +49,7 @@ public class InsertionSortString {
 
     public static void printData(String[] data){
         for(String item:data){
-            System.out.print(item + " ");
+            System.out.println(item);
         }
         System.out.println();
     }
