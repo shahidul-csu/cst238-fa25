@@ -1,11 +1,11 @@
 10
 supercalafragilisticexpialadocious
-antidisestablishmentarianism
-elephant
-goodbye
 looping
-hello
-aloha
-ciao
 hi
+hello
+goodbye
+elephant
+ciao
+antidisestablishmentarianism
+aloha
 a

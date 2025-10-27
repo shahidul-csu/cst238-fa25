@@ -12,10 +12,13 @@ public class InsertionSortString {
         printData(data);
     }
 
+    //Inner loop comparison/swap count in the worst case: 0 + 1 + 2 + 3 + ... + (n-1) = n (n-1) / 2
+    //Big O Time Complexity: T(n) = (n^2)/2 - n/2, O(n^2)
     public static void insertionSort(String[] data){
         for(int i = 0; i < data.length; i++){
             int k = i;
-            while(k > 0 && data[k].compareTo(data[k-1]) < 0){ // "> 0" or "< 0"
+//            while(k > 0 && data[k].compareTo(data[k-1]) < 0){ // "> 0" or "< 0"
+            while(k > 0 && data[k].length() < data[k-1].length()){
                 swap(data, k, k - 1);
                 k--;
             }
@@ -49,7 +52,7 @@ public class InsertionSortString {
 
     public static void printData(String[] data){
         for(String item:data){
-            System.out.println(item);
+            System.out.println(item + " (" + item.length() + ")");
         }
         System.out.println();
     }
