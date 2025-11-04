@@ -1,7 +1,7 @@
 package MondayMorning.Week11;
 
 public class LinkedList {
-    private Node first;
+    private Node head;
 
     //To be completed in the next Class
 }
