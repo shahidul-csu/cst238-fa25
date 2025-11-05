@@ -1,10 +1,14 @@
-package Section53.Week11;
+package Section51.Week11;
 
 public class LinkedList {
     private Node head;
 
     public LinkedList(){
         head = null;
+    }
+
+    public boolean isEmpty(){
+        return head == null;
     }
 
     //Return the number of even in the list
@@ -14,7 +18,7 @@ public class LinkedList {
         } else{
             int count = 0;
             Node n = head;
-            //Stop the loop at the END of the list
+            //This loop stops at the END of the list
             while(n != null){
                 if(n.getData() % 2 == 0){
                     count++;
@@ -25,29 +29,27 @@ public class LinkedList {
         }
     }
 
-    //Add new item at the end of the list
-    public void append(int data){
+    //Add a item at the end of the list
+    public void append(int num){
         if(isEmpty()){
-            head = new Node(data);
+            head = new Node(num);
         } else{
-            //This block of code (including the loop) find the last item in the list
             Node current = head;
-            //Stop the loop at the last item
+            //This loop stops at the last item of the list
             while(current.hasNext()){
                 current = current.getNext();
             }
-            current.setNext(new Node(data));
+            current.setNext(new Node(num));
         }
     }
 
     public String toString(){
         if(isEmpty()){
-            return "Empty list";
+            return "Empty List";
         } else{
             StringBuilder sb = new StringBuilder();
-
             Node current = head;
-//            while (current.hasNext()){ //Wrong
+            // while(current.hasNext()){ // Wrong
             while(current != null){
                 sb.append(current.getData()).append(" -> ");
                 current = current.getNext();
@@ -55,10 +57,6 @@ public class LinkedList {
             sb.append("null");
             return sb.toString();
         }
-    }
-
-    public boolean isEmpty(){
-        return head == null;
     }
 }
 
@@ -92,7 +90,7 @@ class Node{
     }
 
     public String toString(){
-//        return "" + data;
+        //return "" + data;
         return Integer.toString(data);
     }
 }
