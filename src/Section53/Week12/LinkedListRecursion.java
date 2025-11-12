@@ -46,6 +46,7 @@ public class LinkedListRecursion <T> {
 
         public Node(T data){
             this.data = data;
+            this.next = null;
         }
 
         public void append(T data){

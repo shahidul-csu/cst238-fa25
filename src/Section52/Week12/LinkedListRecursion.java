@@ -1,4 +1,4 @@
-package Section51.Week12;
+package Section52.Week12;
 
 //Outer Class
 public class LinkedListRecursion <T> {
@@ -8,7 +8,6 @@ public class LinkedListRecursion <T> {
         first = null;
     }
 
-    //Recursively add new item at the end of the list
     public void append(T data){
         if(isEmpty()){
             first = new Node(data);
@@ -22,7 +21,7 @@ public class LinkedListRecursion <T> {
     }
 
     public String toString(){
-        if (isEmpty()){
+        if(isEmpty()){
             return "Empty List";
         } else{
             StringBuilder sb = new StringBuilder();
@@ -37,7 +36,6 @@ public class LinkedListRecursion <T> {
         }
     }
 
-
     //Inner Class
     private class Node{
         //Payload
@@ -51,6 +49,7 @@ public class LinkedListRecursion <T> {
             this.next = null;
         }
 
+        //Recursively add item at the end of the list
         public void append(T data){
             if(!hasNext()){
                 setNext(new Node(data));
@@ -80,5 +79,4 @@ public class LinkedListRecursion <T> {
         }
     }
 }
-
 
